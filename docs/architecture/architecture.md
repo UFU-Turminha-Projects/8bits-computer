@@ -1,7 +1,7 @@
 # Arquitetura do Computador de 8 Bits
 
 **Status do documento:** Em desenvolvimento
-**Versão:** 0.2.1
+**Versão:** 0.2.2
 **Repositório:** `8bits-computer`
 **Nome do computador:** Ainda não definido
 
@@ -607,7 +607,7 @@ A unidade de controle implementa **os sinais necessários para executar essas mi
 
 # 17. Implementação em Logisim
 
-**Confirmado:** a primeira implementação do computador será realizada no **Logisim**.
+**Confirmado:** O *Logisim* é a ferramenta de validação lógica inicial; posteriormente utilizaremos o Altium para o esquemático elétrico.
 
 A simulação deverá ser utilizada para:
 
@@ -636,7 +636,7 @@ O objetivo é construir o computador progressivamente, testando cada módulo ant
 
 # 19. Família lógica
 
-**Provisório:** a implementação física utilizará predominantemente circuitos integrados da família:
+**Provisório:** a implementação física será projetada após a validação da arquitetura no Logisim. O esquemático elétrico será desenvolvido posteriormente em uma ferramenta de EDA, atualmente planejada como o Altium Designer.:
 
 ```text
 74HC
@@ -931,8 +931,5 @@ Este documento deverá ser atualizado à medida que essas questões forem resolv
 | 0.1    | 2026-09-17 | Registro inicial da arquitetura conhecida |
 | 0.2    | 2026-09-17 | ISA v0.1                                  |
 | 0.2.1  | 2026-09-17 | Adicionando tarefas sobre ISA             |
+| 0.2.2  | 2026-09-17 | Adicionando comentários sobre o Altium    |
 
-```
-
-Esse documento já estabelece uma distinção importante: **“8 bits, 4 bits de endereço, 16×8, instrução de 8 bits, ALU, flags, T0–T5 e controle hardwired” são arquitetura; 74HC4017, NE555 e determinados registradores são implementação ainda sujeita à validação.** Isso evita que uma escolha feita cedo demais vire uma restrição artificial para o restante do projeto.
-```
