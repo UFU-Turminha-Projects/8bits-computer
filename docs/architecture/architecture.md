@@ -794,7 +794,6 @@ Essas escolhas só deverão ser promovidas à categoria **confirmado** quando ti
 
 As seguintes questões ainda precisam ser decididas ou formalizadas:
 
-1. Qual será o conjunto definitivo das 16 instruções?
 2. Quais registradores existirão exatamente no datapath?
 3. Qual será o fluxo exato de dados entre registradores, ALU, barramento e memória?
 4. Quais operações cada registrador poderá realizar?
