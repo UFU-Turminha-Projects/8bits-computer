@@ -505,9 +505,29 @@ O formato geral das instruções é:
     4 bits    4 bits
 ```
 
-**Em aberto:** o conjunto definitivo das 16 instruções ainda não foi estabelecido.
+**Provisório:** o conjunto possível das 16 instruções está apresentado abaixo:
 
-A ISA deverá ser definida levando em consideração:
+ISA v0.1 proposta
+| Opcode | Hex | Mnemônico | Operação | Flags afetadas |
+| :--- | :--- | :--- | :--- | :--- |
+| 0000 | 0x0 | NOP | Nenhuma operação | — |
+| 0001 | 0x1 | LDA addr | A ← RAM[addr] | — |
+| 0010 | 0x2 | ADD addr | A ← A + RAM[addr] | Z, C |
+| 0011 | 0x3 | SUB addr | A ← A - RAM[addr] | Z, C |
+| 0100 | 0x4 | STA addr | RAM[addr] ← A | — |
+| 0101 | 0x5 | LDI val | A ← val | — |
+| 0110 | 0x6 | JMP addr | PC ← addr | — |
+| 0111 | 0x7 | JC addr | Se C=1, PC ← addr | — |
+| 1000 | 0x8 | JZ addr | Se Z=1, PC ← addr | — |
+| 1001 | 0x9 | AND addr | A ← A AND RAM[addr] | Z |
+| 1010 | 0xA | OR addr | A ← A OR RAM[addr] | Z |
+| 1011 | 0xB | INC | A ← A + 1 | Z, C |
+| 1100 | 0xC | DEC | A ← A - 1 | Z, C |
+| 1101 | 0xD | CMP addr | Compara A com RAM[addr] | Z, C |
+| 1110 | 0xE | OUT | OUT ← A | — |
+| 1111 | 0xF | HLT | CPU entra em estado HALT | — |
+
+A ISA deve sempre ser definida levando em consideração:
 
 1. capacidade real do datapath;
 2. registradores disponíveis;
@@ -901,6 +921,7 @@ Este documento deverá ser atualizado à medida que essas questões forem resolv
 | Versão | Data       | Alteração                                 |
 | ------ | ---------- | ----------------------------------------- |
 | 0.1    | 2026-09-17 | Registro inicial da arquitetura conhecida |
+| 0.2    | 2026-09-17 | ISA v0.1                                  |
 
 ```
 
