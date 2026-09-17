@@ -794,31 +794,31 @@ Essas escolhas só deverão ser promovidas à categoria **confirmado** quando ti
 
 As seguintes questões ainda precisam ser decididas ou formalizadas:
 
-- [] (em andamento) Qual será o conjunto definitivo das 16 instruções?
-- [] Quais registradores existirão exatamente no datapath?
-- [] Qual será o fluxo exato de dados entre registradores, ALU, barramento e memória?
-- [] Quais operações cada registrador poderá realizar?
-- [] O PC poderá ser carregado paralelamente?
-- [] Qual será exatamente o papel do MAR?
-- [] Como será realizado o fetch da instrução?
-- [] Quais micro-operações ocorrerão em `T0–T5`?
-- [] Quais sinais de controle existirão?
-- [] Quais instruções alteram `Z`?
-- [] Quais instruções alteram `C`?
-- [] Como `SUB` determinará e armazenará a flag `C`?
-- [] Como serão implementadas instruções condicionais, caso existam?
-- [] Haverá instruções de salto absoluto?
-- [] Haverá instruções de entrada/saída?
-- [] Qual será a arquitetura definitiva de saída?
-- [] Qual será o comportamento do reset?
-- [] Qual será a frequência nominal do clock?
-- [] Como será implementado o clock manual/passo a passo?
-- [] Quantos circuitos integrados de cada tipo serão realmente necessários?
-- [] Qual será a implementação elétrica definitiva do barramento?
-- [] Como serão evitados estados inválidos e contenção de barramento?
-- [] Como serão tratados sinais em alta impedância durante a operação?
-- [] Qual será a organização física das protoboards?
-- [] Qual será a lista definitiva de componentes (BOM)?
+- [ ] (em andamento) Qual será o conjunto definitivo das 16 instruções?
+- [ ] Quais registradores existirão exatamente no datapath?
+- [ ] Qual será o fluxo exato de dados entre registradores, ALU, barramento e memória?
+- [ ] Quais operações cada registrador poderá realizar?
+- [ ] O PC poderá ser carregado paralelamente?
+- [ ] Qual será exatamente o papel do MAR?
+- [ ] Como será realizado o fetch da instrução?
+- [ ] Quais micro-operações ocorrerão em `T0–T5`?
+- [ ] Quais sinais de controle existirão?
+- [ ] Quais instruções alteram `Z`?
+- [ ] Quais instruções alteram `C`?
+- [ ] Como `SUB` determinará e armazenará a flag `C`?
+- [ ] Como serão implementadas instruções condicionais, caso existam?
+- [ ] Haverá instruções de salto absoluto?
+- [ ] Haverá instruções de entrada/saída?
+- [ ] Qual será a arquitetura definitiva de saída?
+- [ ] Qual será o comportamento do reset?
+- [ ] Qual será a frequência nominal do clock?
+- [ ] Como será implementado o clock manual/passo a passo?
+- [ ] Quantos circuitos integrados de cada tipo serão realmente necessários?
+- [ ] Qual será a implementação elétrica definitiva do barramento?
+- [ ] Como serão evitados estados inválidos e contenção de barramento?
+- [ ] Como serão tratados sinais em alta impedância durante a operação?
+- [ ] Qual será a organização física das protoboards?
+- [ ] Qual será a lista definitiva de componentes (BOM)?
 
 ---
 
