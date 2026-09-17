@@ -1,7 +1,7 @@
 # Arquitetura do Computador de 8 Bits
 
 **Status do documento:** Em desenvolvimento
-**Versão:** 0.1
+**Versão:** 0.2.1
 **Repositório:** `8bits-computer`
 **Nome do computador:** Ainda não definido
 
@@ -528,7 +528,7 @@ O formato geral das instruções é:
 | 1110 | 0xE | OUT | OUT ← A | — |
 | 1111 | 0xF | HLT | CPU entra em estado HALT | — |
 
->[!IMPORTANT] Tarefa
+> [!IMPORTANT] Tarefa
 > Próximo passo: antes de marcar isso como ISA confirmada, devemos pegar cada uma das 16 instruções e 
 > escrever suas micro-operações T0–T5. Isso vai nos dizer se a ISA é realmente implementável com o 
 > datapath que estamos projetando. Se alguma instrução exigir hardware desnecessário ou criar uma 
