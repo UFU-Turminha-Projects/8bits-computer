@@ -100,8 +100,8 @@ O formato é:
 
 ```text
 ┌────────────┬────────────┐
-│   OPCODE   │  OPERANDO  │
-│   4 bits   │   4 bits   │
+│   OPCODE    │   OPERANDO  │
+│   4 bits    │    4 bits   │
 └────────────┴────────────┘
 ```
 
@@ -295,25 +295,25 @@ A arquitetura funcional prevista pode ser representada de forma simplificada com
 
 ```text
                  ┌─────────────────────┐
-                 │      CONTROL        │
-                 │       UNIT         │
+                 │      CONTROL          │
+                 │       UNIT            │
                  └─────────┬───────────┘
                            │
                            │ control signals
                            ▼
 ┌──────────┐        ┌─────────────┐        ┌──────────┐
-│   PC     │───────►│             │◄──────►│   RAM    │
-└──────────┘        │   BUS 8-bit │        │ 16 × 8   │
-                    │             │        └──────────┘
-┌──────────┐        │             │
-│ Registers│◄──────►│             │
+│   PC      │──────►│              │◄──────►│    RAM    │
+└──────────┘        │   BUS 8-bit  │        │  16 × 8   │
+                     │              │        └──────────┘
+┌──────────┐        │              │
+│ Registers │◄─────►│              │
 └──────────┘        └──────┬──────┘
-                           │
-                           ▼
+                             │
+                             ▼
                     ┌─────────────┐
-                    │     ALU     │
-                    │ ADD/SUB/    │
-                    │ AND/OR      │
+                    │     ALU      │
+                    │ ADD/SUB/     │
+                    │ AND/OR       │
                     └─────────────┘
 ```
 
