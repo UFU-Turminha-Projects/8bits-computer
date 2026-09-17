@@ -507,7 +507,8 @@ O formato geral das instruções é:
 
 **Provisório:** o conjunto possível das 16 instruções está apresentado abaixo:
 
-ISA v0.1 proposta
+#### ISA v0.1 proposta
+
 | Opcode | Hex | Mnemônico | Operação | Flags afetadas |
 | :--- | :--- | :--- | :--- | :--- |
 | 0000 | 0x0 | NOP | Nenhuma operação | — |
@@ -526,6 +527,12 @@ ISA v0.1 proposta
 | 1101 | 0xD | CMP addr | Compara A com RAM[addr] | Z, C |
 | 1110 | 0xE | OUT | OUT ← A | — |
 | 1111 | 0xF | HLT | CPU entra em estado HALT | — |
+
+>[!IMPORTANT] Tarefa
+> Próximo passo: antes de marcar isso como ISA confirmada, devemos pegar cada uma das 16 instruções e 
+> escrever suas micro-operações T0–T5. Isso vai nos dizer se a ISA é realmente implementável com o 
+> datapath que estamos projetando. Se alguma instrução exigir hardware desnecessário ou criar uma 
+> sequência problemática, corrigimos agora, antes de construir o Logisim.
 
 A ISA deve sempre ser definida levando em consideração:
 
@@ -898,7 +905,7 @@ Programação da RAM    Manual
 Ainda permanecem em desenvolvimento:
 
 ```text
-ISA completa
+ISA completa (testar as micro operações de cada intrução do ISA v0.1)
 Datapath definitivo
 Conjunto de registradores
 Micro-operações
@@ -922,6 +929,7 @@ Este documento deverá ser atualizado à medida que essas questões forem resolv
 | ------ | ---------- | ----------------------------------------- |
 | 0.1    | 2026-09-17 | Registro inicial da arquitetura conhecida |
 | 0.2    | 2026-09-17 | ISA v0.1                                  |
+| 0.2.1  | 2026-09-17 | Adicionando tarefas sobre ISA             |
 
 ```
 
